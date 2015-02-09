@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php-ffmpeg/php-ffmpeg": "~0.5"
+    },
+    "authors": [
+        {
+            "name": "Takuro Hishikawa",
+            "email": "hishikawa@concrete5.co.jp"
+        }
+    ]
+}
