@@ -9,7 +9,7 @@ class VideoFileTypeInspector extends FileTypeInspector
             // create thumbnail directories
             $fv->createThumbnailDirectories();
             
-            // get a image of first page of the pdf
+            // open the video file
             $filePath = $fv->getPath();
             $video = $ffmpeg->open($filePath);
             
