@@ -1,10 +1,14 @@
-<?php defined('C5_EXECUTE') or die('Access Denied');
+<?php
+namespace Concrete\Package\AdvancedThumbnail;
 
-class AdvancedThumbnailPackage extends Package
+use Concrete\Core\File\Type\TypeList as FileTypeList;
+use Concrete\Core\File\Type\Type as FileType;
+
+class Controller extends \Concrete\Core\Package\Package
 {
     protected $pkgHandle = 'advanced_thumbnail';
-    protected $appversionRequired = '5.6';
-    protected $pkgVersion = '0.1';
+    protected $appversionRequired = '8.1.0';
+    protected $pkgVersion = '1.0';
     
     public function getPackageDescription()
     {
@@ -36,6 +40,6 @@ class AdvancedThumbnailPackage extends Package
     }
 
     protected function registerAutoload() {
-        require_once(__DIR__ . '/vendor/autoload.php');
+        require $this->getPackagePath().'/vendor/autoload.php';
     }
 }
